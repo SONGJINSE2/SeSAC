@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          
+    <label for="value1">값 1:</label>
+    <input type="text" id="value1"><br>
+
+    <label for="value2">값 2:</label>
+    <input type="text" id="value2"><br>
+
+    <label for="cal">연산자</label>
+    <input type="text" id="cal"><br>
+
+    <label for="result">결과</label>
+    <input type="text" id="result"><br><br>
+    
+    <!-- <button type="button" onclick="calBtn()">계산하기</button>
+    <button type="button" onclick="reloadBtn()">초기화</button>-->
+
+    <input type="button" onclick="calBtn()" value="계산하기">
+    <input type="button" onclick="reloadBtn()" value="초기화">
+
+    
+    <script>
+        function calBtn(){
+            let $value1 = Number(document.getElementById('value1').value);
+            let $value2 = Number(document.getElementById('value2').value);
+            let $cal = document.getElementById('cal').value;
+            let $result = document.getElementById('result');
+
+            switch ($cal) {
+                case "+":
+                    $result.value = $value1 + $value2;
+                break; 
+                case "-":
+                    $result.value = $value1 - $value2;
+                break; 
+                case "*":
+                    $result.value = $value1 * $value2;
+                break; 
+                case "/":
+                    $result.value = $value1 / $value2;
+                break; 
+                }
+
+            
+            }
+            
+            function reloadBtn(){
+                document.getElementById("value1").value = "";
+                document.getElementById("value2").value = "";
+                document.getElementById("cal").value = "";
+                document.getElementById("result").value = "";
+
+             // var inputs = document.querySelectorAll("input");
+             //  console.log(inputs);
+             // for ( var i = 0; i < inputs.length; i++){
+             //   inputs[i].value = "";
+             // }
+
+            }
+        
+    </script>
+    
+</body>
+</html>

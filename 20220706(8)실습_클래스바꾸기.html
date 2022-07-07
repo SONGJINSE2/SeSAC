@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../SeSSAC_4기 1주차/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+        <link rel="stylesheet" href="../SeSSAC_4기 1주차/jquery-ui-1.13.1.custom/jquery-ui.css">
+    
+    <script>
+        function switchClass(){
+            if ( $("div").hasClass("css1") ){
+                    $("div").switchClass("css1","css2",1000);
+                }else if (( $("div").hasClass("css2") )){
+                    $("div").switchClass("css2","css3",1000);
+                }else if (( $("div").hasClass("css3") )){
+                    $("div").switchClass("css3","css4",1000);
+                }else if (( $("div").hasClass("css4") )){
+                    $("div").switchClass("css4","css5",1000);
+                }else if (( $("div").hasClass("css5") )){
+                    $("div").switchClass("css5","css6",1000);
+                }else if (( $("div").hasClass("css6") )){
+                    $("div").switchClass("css6","css7",1000);
+                }else if (( $("div").hasClass("css7") )){
+                    $("div").switchClass("css7","css1",1000);
+                }
+        }
+        
+         /* $("div").switchClass("css1","css2",1000);
+            $("div").switchClass("css2","css3",1000);
+            $("div").switchClass("css3","css4",1000);
+            $("div").switchClass("css4","css5",1000);
+            $("div").switchClass("css5","css6",1000);
+            $("div").switchClass("css6","css7",1000);
+            $("div").switchClass("css7","css8",1000);*/
+    </script>
+    <style>
+        .css1{
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            background-color: red;
+        }
+        .css2{
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .css3{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .css4{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .css5{
+            background-color: rgb(25, 16, 205);
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .css6{
+            background-color: rgb(6, 6, 59);
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .css7{
+            background-color: rgb(155, 21, 205);
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <div class="css1" onclick="switchClass()"></div>
+        
+    </body>
+</html>
