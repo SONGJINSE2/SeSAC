@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../SeSAC/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+        <link rel="stylesheet" href="../SeSAC/jquery-ui-1.13.1.custom/jquery-ui.css">
+    
+        <script>
+            function change(fruit){
+                $("img").attr("src","../SeSAC/img/" + fruit + ".png");
+            }
+        </script>
+
+        <style>
+            button{
+                width: 100px;
+                height: 50px;
+                color: white;
+                background-color: black;
+                text-align: center;
+            }
+        </style>
+
+        </head>
+
+    <body>
+        <img width="500px" height="500px"><br>
+        <button type="button" onclick="change('apple')">사과</button>
+        <button type="button" onclick="change('grape')">포도</button>
+        <button type="button" onclick="change('peach')">복숭아</button>
+        <button type="button" onclick="change('banana')">바나나</button>
+    </body>
+
+</html>

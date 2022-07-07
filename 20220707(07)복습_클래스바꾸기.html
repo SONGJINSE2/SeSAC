@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../SeSAC/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+        <link rel="stylesheet" href="../SeSAC/jquery-ui-1.13.1.custom/jquery-ui.css">
+    </head>
+
+    <script>
+        function change(){
+            if($("div").hasClass("rec1")){
+                $("div").switchClass("rec1","rec2",1000);
+            }else if($("div").hasClass("rec2")){
+                $("div").switchClass("rec2","rec3",1000);
+            }else if($("div").hasClass("rec3")){
+                $("div").switchClass("rec3","rec4",1000);
+            }else if($("div").hasClass("rec4")){
+                $("div").switchClass("rec4","rec5",1000);
+            }else if($("div").hasClass("rec5")){
+                $("div").switchClass("rec5","rec6",1000);
+            }else if($("div").hasClass("rec6")){
+                $("div").switchClass("rec6","rec7",1000);
+            }else if($("div").hasClass("rec7")){
+                $("div").switchClass("rec7","rec1",1000);
+            }
+            
+        }
+    </script>
+
+    <style>
+        .rec1{
+            width: 100;
+            height: 100;
+            background-color: red;
+        }
+        .rec2{
+            width: 100;
+            height: 100;
+            background-color: orangered;
+        }
+        .rec3{
+            width: 100;
+            height: 100;
+            background-color: yellow;
+        }
+        .rec4{
+            width: 100;
+            height: 100;
+            background-color: green;
+        }
+        .rec5{
+            width: 100;
+            height: 100;
+            background-color: blue;
+        }
+        .rec6{
+            width: 100;
+            height: 100;
+            background-color: rgb(8, 8, 58);
+        }
+        .rec7{
+            width: 100;
+            height: 100;
+            background-color: rgb(222, 9, 237);
+        }
+        div{
+            cursor: pointer;
+        }
+        
+    </style>
+
+
+    <body>
+        <div class="rec1" onclick="change()"></div>
+
+    </body>
+    
+</html>
