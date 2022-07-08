@@ -1,0 +1,32 @@
+td {
+    width: 100px;
+    height: 100px;
+}
+tr > td:first-child > p,
+tr > th:first-child > p {
+    /*color: red*/
+}
+
+.red_txt{
+    color:#e00012;
+}
+
+tr > td:last-child > p,
+tr > th:last-child > p {
+    /*color: blue;*/
+}
+
+.blue_txt{
+    color:blue;
+}
+
+
+td > p:hover {
+    transform: scale(1.5);
+    cursor:pointer;
+    font-weight:600;
+}
+
+td{
+    vertical-align:top;
+}

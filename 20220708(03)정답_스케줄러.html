@@ -2,9 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
-​
         <title> 내 스케줄 </title>
-​
         <style>
             td {
                 width: 100px;
@@ -24,19 +22,16 @@
             }
         </style>
     </head>
-​
-    <body > 
+    <body >
         <div>
             날짜 : <input type="text" id="date" readonly> <br>
             내용 : <input type="text" id="content"> <br>
             <button type="button" onclick="writeSchedule();">작성</button> <br>
-        </div> 
+        </div>
         <div style="font-size:2em; color:green; text-align:center;">
-            2022년 7월        
-        </div> 
-​
+            2022년 7월
+        </div>
         <br>
-        
         <table align="center" width=500 style="text-align:center;">
             <tr>
                 <th>日</th>
@@ -44,7 +39,7 @@
                 <th>火</th>
                 <th>水</th>
                 <th>木</th>
-                <th>金</th>
+                <th>金</th>
                 <th>土</th>
             </tr>
             <tr>
@@ -91,7 +86,7 @@
                 <td><p>29</p></td>
                 <td><p>30</p></td>
             </tr>
-            <tr> 
+            <tr>
                 <td><p>31</p></td>
                 <td><p></p></td>
                 <td><p></p></td>
@@ -101,27 +96,29 @@
                 <td><p></p></td>
             </tr>
         </table>
-​
         <script>
             var target;
-            
             $("td").on("click", function( obj ){
+                console.log( obj );
                 target = obj.currentTarget; // 현재 선택한 태그 target 변수에 담기 지금, td가 console.log로 나온다.
                 console.log( target );
-                alert( $(obj.currentTarget).text() );
+                $("#date").val( $(obj.currentTarget).text() );
+                // alert( $(obj.currentTarget).text() );
             });
-​
             function writeSchedule(){
-                var li = document.createElement("li");
-                li.innerText= "asdasdsa";
-                $("obj.currentTarget").append(li);
+                // 이 함수를 채워주세요.
+                var content = $("#content").val();
+                // $(target).append("<p>" + content + "</p>");
+                var ps = document.querySelectorAll("p");
+                for ( var i = 0; i < ps.length; i++ ){
+                    console.log(ps[i]);
+                    if ( $(ps[i]).text() == $("#date").val() ){
+                        $(ps[i]).after(
+                            "<h1></h1>"
+                        );
+                    }
+                }
             }
-
-            function setValue(){
-                //document.getElementById("input1").value= "~~~~";
-                $( "#date" ).val( "" );
-            }
-                
         </script>
     </body>
 </html>

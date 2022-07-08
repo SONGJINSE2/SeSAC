@@ -1,10 +1,9 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
-​
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
         <title> 내 스케줄 </title>
-​
+
         <style>
             td {
                 width: 100px;
@@ -24,7 +23,7 @@
             }
         </style>
     </head>
-​
+
     <body > 
         <div>
             날짜 : <input type="text" id="date" readonly> <br>
@@ -34,7 +33,7 @@
         <div style="font-size:2em; color:green; text-align:center;">
             2022년 7월        
         </div> 
-​
+
         <br>
         
         <table align="center" width=500 style="text-align:center;">
@@ -91,7 +90,7 @@
                 <td><p>29</p></td>
                 <td><p>30</p></td>
             </tr>
-            <tr> 
+            <tr>
                 <td><p>31</p></td>
                 <td><p></p></td>
                 <td><p></p></td>
@@ -101,27 +100,24 @@
                 <td><p></p></td>
             </tr>
         </table>
-​
+
         <script>
-            var target;
+            // var target;
             
             $("td").on("click", function( obj ){
                 target = obj.currentTarget; // 현재 선택한 태그 target 변수에 담기 지금, td가 console.log로 나온다.
                 console.log( target );
-                alert( $(obj.currentTarget).text() );
+                $("#date").val( $(target).text());
+                //alert( $(obj.currentTarget).text() );
             });
-​
-            function writeSchedule(){
-                var li = document.createElement("li");
-                li.innerText= "asdasdsa";
-                $("obj.currentTarget").append(li);
-            }
 
-            function setValue(){
-                //document.getElementById("input1").value= "~~~~";
-                $( "#date" ).val( "" );
+            function writeSchedule(){
+                // 이 함수를 채워주세요.
+                var content = $("#content").val();
+
+                $(target).append("<p>"+ content + "</p>");
             }
-                
+            
         </script>
     </body>
 </html>

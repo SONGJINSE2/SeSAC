@@ -2,29 +2,10 @@
     <head>
         <meta charset="UTF-8">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
-​
+        <link rel="stylesheet" href="./css/main.css" />
+        <script defer src="./js/main.js"></script>
         <title> 내 스케줄 </title>
-​
-        <style>
-            td {
-                width: 100px;
-                height: 100px;
-            }
-            tr > td:first-child > p,
-            tr > th:first-child > p {
-                color: red
-            }
-            tr > td:last-child > p,
-            tr > th:last-child > p {
-                color: blue;
-            }
-            td > p:hover {
-                transform: scale(1.2);
-                cursor:pointer;
-            }
-        </style>
     </head>
-​
     <body > 
         <div>
             날짜 : <input type="text" id="date" readonly> <br>
@@ -34,18 +15,17 @@
         <div style="font-size:2em; color:green; text-align:center;">
             2022년 7월        
         </div> 
-​
         <br>
         
-        <table align="center" width=500 style="text-align:center;">
+        <table class="table_box" align="center" width=500 style="text-align:center;">
             <tr>
-                <th>日</th>
+                <th class="red_txt">日</th>
                 <th>月</th>
                 <th>火</th>
                 <th>水</th>
                 <th>木</th>
                 <th>金</th>
-                <th>土</th>
+                <th class="blue_txt">土</th>
             </tr>
             <tr>
                 <td><p></p></td>
@@ -91,7 +71,7 @@
                 <td><p>29</p></td>
                 <td><p>30</p></td>
             </tr>
-            <tr> 
+            <tr>
                 <td><p>31</p></td>
                 <td><p></p></td>
                 <td><p></p></td>
@@ -101,27 +81,21 @@
                 <td><p></p></td>
             </tr>
         </table>
-​
         <script>
-            var target;
-            
-            $("td").on("click", function( obj ){
-                target = obj.currentTarget; // 현재 선택한 태그 target 변수에 담기 지금, td가 console.log로 나온다.
-                console.log( target );
-                alert( $(obj.currentTarget).text() );
-            });
-​
-            function writeSchedule(){
-                var li = document.createElement("li");
-                li.innerText= "asdasdsa";
-                $("obj.currentTarget").append(li);
-            }
+            // var target;
+            // let $date = document.querySelector('#date');
 
-            function setValue(){
-                //document.getElementById("input1").value= "~~~~";
-                $( "#date" ).val( "" );
-            }
-                
+            // $("td").on("click", function( obj ){
+                // target = obj.currentTarget; // 현재 선택한 태그 target 변수에 담기 지금, td가 console.log로 나온다.
+                // /*$("#date").val( $(obj.currentTarget).text());*/
+                // $date.value = target.innerText;
+            // });
+            // function writeSchedule(){               
+                // var content = $("#content").val();
+                // $(target).append("<span>" + content + "</span>");
+            // }
+
+            
         </script>
     </body>
 </html>
