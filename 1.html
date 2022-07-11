@@ -1,0 +1,230 @@
+
+<html>
+
+  <head>
+  
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+      <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>-->
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <title>Festa Restaurant</title>
+
+
+
+      <style>
+          img{
+              width: 100%;
+              height: 100%;
+          }
+          .logo{
+              width: 50px;
+              height: 50px;
+          }
+          .carousel-item{
+            width: 100%;
+            height: 70%;
+            opacity:0.8;
+          }
+          
+            
+          
+          .jb-wrap {
+            width: 100%;
+            margin: 0px auto;
+            position: relative;
+            }
+          .jb-wrap img {
+            width: 100%;
+            vertical-align: middle;
+            }
+            .jb-text {
+            position: absolute;
+              top: 0px;
+              width: 100%;
+              height: 100%;
+            }
+            .jb-text-table {
+              display: table;
+              width: 100%;
+              height: 100%;
+            }
+            .jb-text-table-row {
+              display: table-row;
+            }
+            .jb-text-table-cell {
+              display: table-cell;
+              vertical-align: middle;
+            }
+            .jb-text p {
+              margin: 0px 40px;
+              padding: 10px;
+              text-align: center;
+            }
+            .jb-image{
+              width: 100%;
+              height: 25%
+            }
+
+            #ity{
+              color:white;
+              font-size:xx-large;
+              font-family: 'Black Han Sans', sans-serif;
+              font-family: 'Nanum Brush Script', cursive;
+
+            }
+            #navbarScrollingDropdown{
+              font-size:x-large;
+              font-family: 'Black Han Sans', sans-serif;
+              
+            }
+            button:hover{
+              background-color: rgba(250, 242, 242, 0.216);
+            }
+            #navbarScrollingDropdown:hover{
+              background-color: rgb(250, 242, 242, 0.216);
+              transform: scale(1.1);
+            }
+            .dropdown-item{
+              font-size:large;
+              font-family: 'Black Han Sans', sans-serif;
+            }
+            #chef1{
+              width: 500px;
+              height: 500px;
+            }
+            #blk1{
+              width: 100%;
+              height: 100%;
+            }
+      </style>
+
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg bg-dark" >
+          <div class="container-fluid ">
+      
+            <a class="logo" href="./20220710(01)실습_웹페이지만들기.html"><img src="./img/로고1.jpg" onclick="logo1"></a>
+            <button class="navbar-toggler" type="button" cusordata-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    INTRODUCE
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="./20220711(04)실습_웹페이지만들기.html">회사소개</a></li>
+                    <li><a class="dropdown-item" href="#">인재채용</a></li>
+                    <li><a class="dropdown-item" href="#">입점문의</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    
+                    
+                  </ul>
+                </li>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MENU
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Salad</a></li>
+                  <li><a class="dropdown-item" href="#">Pasta</a></li>
+                  <li><a class="dropdown-item" href="#">Pizza</a></li>
+                  <li><a class="dropdown-item" href="#">Steak</a></li>
+                  <li><a class="dropdown-item" href="#">Beverage</a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">기타</a></li>
+                </ul>
+              </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    EVENT&NEWS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">이벤트</a></li>
+                    <li><a class="dropdown-item" href="#">새소식</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CUSTOMER
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Q/A</a></li>
+                    <li><a class="dropdown-item" href="#">자주묻는질문</a></li>
+                    <li><a class="dropdown-item" href="#">1:1채팅</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">원격지원</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="navbarScrollingDropdown"
+                  style="font-size:x-large; font-family: 'Black Han Sans', sans-serif; ">
+                      MAP
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel" style="font-family: 'Black Han Sans', sans-serif;">오시는 길</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.0779132320606!2d126.98132066757218!3d37.47738832704396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca04c184509e1%3A0xfb43b963679bf9e6!2z7YyM7Iqk7YWU7Iuc7Yuw!5e0!3m2!1sko!2skr!4v1657460530850!5m2!1sko!2skr"
+                              width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                          <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="font-family: 'Black Han Sans', sans-serif;">닫기</button>
+                         
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+        
+        
+        
+
+          <div class="jb-wrap">
+            <div class="jb-image"><img src="./img/블랙1.png" id="blk1"></div>
+              <div class="jb-text">
+                  <div class="jb-text-table">
+                      <div div class="jb-text-table-row">
+                          <div class="jb-text-table-cell">
+                              
+                <p id="ity" color="white">
+                  <img src="./img/chef1.jpg" id=chef1><br><br>
+                  서울도심에서 이탈리아의 맛을 느낄 수 있는 레스토랑 PESTA를 찾아주셔서 감사합니다.<br>
+                  저희 PESTA는 1991년 부터 지금까지 오랜 전통을 고수하며 이자리를 지켜왔습니다.<br>
+                  고객님들의 입맛을 사로잡기위해 이탈리아 현지에서 10년 이상의 경력을 가진 요리사들이 한자리에 모였습니다.<br>
+                  만족스러운 만찬을 위해 최선을 다하겠습니다.<br></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+  </body>
+
+</html>
