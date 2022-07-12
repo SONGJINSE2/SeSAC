@@ -14,25 +14,34 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <title>Festa Restaurant</title>
 
-
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicon//apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicon//apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon//apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicon//apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicon//apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicon//apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicon//apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon//apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./favicon//android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon//favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon//favicon-16x16.png">
+        <link rel="manifest" href="./favicon//manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
         <style>
-            img{
-                width: 100%;
-                height: 100%;
-            }
             .logo{
                 width: 50px;
                 height: 50px;
             }
             .carousel-item{
               width: 100%;
-              height: 70%;
+              height: 80%;
               opacity:0.8;
             }
-            
-              
-            
             .jb-wrap {
 				      width: 100%;
 				      margin: 0px auto;
@@ -70,11 +79,12 @@
                 height: 25%;
               }
 
-              #ity{
+              .intro_text{
                 color:white;
                 font-size:xx-large;
                 font-family: 'Black Han Sans', sans-serif;
                 font-family: 'Nanum Brush Script', cursive;
+                text-align: center;
 
               }
               #navbarScrollingDropdown{
@@ -93,36 +103,54 @@
                 font-size:large;
                 font-family: 'Black Han Sans', sans-serif;
               }
-              #blk{
-                width: 100%;
-                height: 95%;
+              .intro1{
+                width:100%;
+                height: 1200px;
+                background-image: url("./img/블랙1.png");
+                
               }
-              .img_box2{
-                width: 100px;
-                height: 100px;
+              .intro2{
+                width: 90%px;
                 margin: 0 Auto;
                 text-align: center;
               }
-              .img_box{
-                width: 100%;
-                background-image: url("./img/우주1.jpg");
-              }
-              
-              .introduce{
-                width:100%;
-                background-image: url("./img/블랙1.png");
-              }
-              .introduce2{
+              #intro_img{
                 width: 300px;
                 height: 500px;
                 margin: 0 Auto;
                 text-align: center;
               }
-              .introduce3{
+              .i3{
+                width: 100px;
+                height: 50px;
+              }
+              .a1{
+                background-color: black;
                 width: 100%;
-                margin: 0 Auto;
-                text-align: center;
-                background-image: url("./img/블랙1.png");
+                height: 22px;
+              }
+              .a2{
+                  width: 30%;
+                  height: 100px;
+                  margin:0 auto;
+                  text-align: center;
+              }
+              .i1{
+                  background-color: black;
+              }
+              .i2{
+                  color: white;
+              }
+              .a3{
+                  background-color: black;
+                  width: 100%;
+                  height: 100px;
+              }
+              .a4{
+                  width: 50%;
+                  height: 100px;
+                  margin:0 auto;
+                  text-align: center;
               }
         </style>
 
@@ -132,7 +160,7 @@
         <nav class="navbar navbar-expand-lg bg-dark" >
             <div class="container-fluid ">
         
-              <a class="logo" href="./20220710(01)실습_웹페이지만들기.html"><img src="./img/로고1.jpg" onclick="logo1"></a>
+              <a href="./20220710(01)실습_웹페이지만들기.html"><img src="./img/logo1.png" class="logo" onclick="logo1"></a>
               <button class="navbar-toggler" type="button" cusordata-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -251,41 +279,43 @@
             
         
 
-          <div class="jb-wrap">
-			      <div class="jb-image"><img src="./img/블랙1.png" id="blk1"></div>
-			        <div class="jb-text">
-				        <div class="jb-text-table">
-					        <div div class="jb-text-table-row">
-						        <div class="jb-text-table-cell">
-							        <p id="ity" color="white">친절과 정성으로 모시겠습니다.<br>
-                        We'll serve you with kindness and sincerity.<br><br>
-                        이태리 현지음식의 맛 그대로를 제공하겠습니다.<br>
-                      We'll provide the taste of local Italian food as it is.</p>
-						        </div>
-					        </div>
-				        </div>
-			        </div>
-		        </div>
-
-            <div class="img_box">
-                  <div class="img_box2">
-                     <img src="./img/chef1.jpg">
-                  </div>
+          <div class="intro1">
+            <div class="intro2">
+							<p class="intro_text">
+                <br>
+                친절과 정성으로 모시겠습니다.<br>
+                We'll serve you with kindness and sincerity.<br><br>
+                이태리 현지음식의 맛 그대로를 제공하겠습니다.<br>
+                We'll provide the taste of local Italian food as it is.</p><br>
+                <img src="./img/chef1.jpg" id="intro_img">
+                <br>
+                <br>
+              <p class="intro_text">
+              서울도심에서 이탈리아의 맛을 느낄 수 있는 레스토랑 PESTA를 찾아주셔서 감사합니다.<br>
+              저희 PESTA는 1991년 부터 지금까지 오랜 전통을 고수하며 이자리를 지켜왔습니다.<br>
+              고객님들의 입맛을 사로잡기위해 이탈리아 현지에서 10년 이상의 경력을 가진 요리사들이 한자리에 모였습니다.<br>
+              만족스러운 만찬을 위해 최선을 다하겠습니다.<br></p><br><br><br><br>
             </div>
-
-            <div class="introduce">
-              <div class="introduce2">
-                <img src="./img/chef1.jpg"><br><br>
-              </div>
+					</div>
+            
+          <div class="a1">
+            <div class="a2">
+                <p class="i1">
+                    <a href="#" onclick="popupView();">개인정보취급방침</a>
+                    <a href="#">고객문의</a>
+                    <a href="#">사이트맵</a>
+                </p>
             </div>
-
-            <div class="introduce3">
-              <p id="ity" color="white">
-                서울도심에서 이탈리아의 맛을 느낄 수 있는 레스토랑 PESTA를 찾아주셔서 감사합니다.<br>
-                 저희 PESTA는 1991년 부터 지금까지 오랜 전통을 고수하며 이자리를 지켜왔습니다.<br>
-               고객님들의 입맛을 사로잡기위해 이탈리아 현지에서 10년 이상의 경력을 가진 요리사들이 한자리에 모였습니다.<br>
-                만족스러운 만찬을 위해 최선을 다하겠습니다.<br></p>
+        </div>
+        
+        <div class="a3">
+            <div class="a4">
+                <address class="i2">06164, 513 COEX 2F, Sadang , Dongjjakgu, Seoul KOREA</address>
+                <a href="#" target="_blank" title="새창" lang="en" class="i2">VIKING'S WHARF</a>
+                <a href="#" target="_blank" title="새창" lang="en" class="i2">BIG GUY'S</a>
+                <a href="#" target="_blank" title="새창" lang="en" class="i2">CRAB52</a>
             </div>
+        </div>
             
             
     </body>
@@ -310,5 +340,4 @@
                   <!-- </div> -->
               <!-- </div> -->
           <!-- </div> -->
-    <!-- 팝이콘 -->
-    <!-- Footer -->
+    
