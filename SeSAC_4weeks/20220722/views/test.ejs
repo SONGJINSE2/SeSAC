@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>EJS</title>
+    </head>
+    <body>
+        <!--
+            for ( var i = 0; i < 5; i++){
+                if( i==3 ){
+                    // h3태그
+                } else {
+                    // h1태그
+                }
+            }
+        -->
+        <% for (var i = 0; i < 5; i++) { %>
+            <% if ( i==3 ) { %>
+                <h3>hi</h3>
+            <% } else { %>
+                <h1>hi</h1>
+            <% } %>
+        <% } %>
+
+        <% var a = 'hi'; %>
+        <p><%=a%></p>
+
+        <%- include("test2.ejs") %> <!-- 반복되는 파일들을 불러올때 자주사용-->
+    </body>
+</html>
+
+<!-- %는 한줄에 하나씩 묶어줘야한다 -->

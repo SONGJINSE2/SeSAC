@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>실습6. CSS실습</title>
+        <style>
+            .head{
+                background-color: dodgerblue;
+                border-radius: 100px;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                left: 100px;
+                top: 100px;
+                z-index : 2;
+            }
+            .eye{
+                background-color: rgb(255, 255, 255);
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                left: 135px;
+                top: 125px;
+                z-index : 3;
+            }
+            .eye2{
+                background-color: black;
+                border-radius: 20px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 135px;
+                top: 130px;
+                z-index : 4;
+            }
+            .body1{
+                background-color: rgb(106, 98, 202);
+                border-radius: 100px;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 180px;
+                top: 150px;
+                z-index: 2;
+            }
+            .body2{
+                background-color: midnightblue;
+                border-radius: 100px;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 210px;
+                top: 200px;
+                z-index: 5;
+            }
+            .body3{
+                background-color: lightblue;
+                border-radius: 100px;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left : 260px;
+                top: 200px;
+                z-index: 6;
+            }
+            .tail{
+                background-color: rgb(26, 190, 180);
+                border-radius: 100px;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left : 320px;
+                top : 200px;
+                z-index: 7;
+            }
+            .grass{
+                position: absolute;
+                left : 320px;
+                top: 220px;
+                z-index: 1;
+            }
+            .grass1{
+                position: absolute;
+                left: 100px;
+                top: 200px;
+                z-index: 1;
+            }
+            .grass2{
+                position: absolute;
+                left: 150px;
+                top: 270px;
+                z-index: 6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p><%=a%></p>
+        <div class="head"></div>
+        <div class="eye"></div>
+        <div class="eye2"></div>
+        <div class="body1"></div>
+        <div class="body2"></div>
+        <div class="body3"></div>
+        <div class="tail"></div>
+        <div class="grass"><img width=200; height=100; src="/abc/aa/grass.jpg"></div>
+        <div class="grass1"><img width=200; height=120; src="/abc/aa/grass.jpg"></div>
+        <div class="grass2"><img width=200; height=50; src="/abc/aa/grass.jpg"></div>
+    
+    </body>
+</html>
