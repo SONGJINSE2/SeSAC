@@ -1,0 +1,14 @@
+{
+  "name": "q",
+  "version": "1.0.0",
+  "description": "",
+  "main": "package_npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": { //의존성관리
+    "express": "^4.18.1"
+  }
+}
