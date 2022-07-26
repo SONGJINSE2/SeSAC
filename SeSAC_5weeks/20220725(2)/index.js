@@ -29,7 +29,7 @@ app.post("/receive",function(req,res){
     // .catch((err)=>{
         // console.log(err);
     // })
-    var data =fs.readFileSync("./info.txt").toString().split('//');
+    var data = fs.readFileSync("./info.txt").toString().split('//');
     
     
     let a = data[0];
