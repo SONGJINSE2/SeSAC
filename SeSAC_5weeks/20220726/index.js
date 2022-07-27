@@ -6,38 +6,39 @@ const fs = require("fs");
 
 app.set("view engine", "ejs");
 app.use( express.static( "public" ));
-app.use( express.urlencoded( {extended : true} ));
-app.use( bodyParser.json());
+app.use( express.urlencoded({extended: true}));
+app.use( bodyParser.json() );
 
-app.get("/", function(req,res){
+app.get("/",function(req,res){
     res.render("index");
 });
 
-app.post("/receive", function(req,res){
-    res.render("receive",req.body);
+app.post("/receive",function(req,res){
+    
+    
 
+    let loginId = req.body.name;
+    let loginPw = req.body.pw;
+    //let loginTxt;
+    
+    var data = fs.readFileSync("./info.txt").toString().split('//');
+    
+    
+    let a = data[0];
+    let b = data[1];
+    
 
-let { loginId, loginPw } = req.body;
-
-var data = fs.readFileSync("./info.txt").toString().split("//");
-
-let a = data[0];
-let b = date[1];
-console.log(a,b);
-
-if(loginId == a && loginPw == b){
-    console.log("로그인되었습니다.")
-}
-else{
-    console.log("로그인에 실패하였습니다.")
-}
+    
+    if(loginId == a && loginPw == b){
+        res.send( "로그인성공");
+    } else{ 
+        res.send("로그인실패");
+    }
 
 });
 
+
 app.listen(port, ()=>{
-    console.log(" Sever port : ", port);
+    console.log( "Server Port : ", port);
 })
-    
-
-
 
