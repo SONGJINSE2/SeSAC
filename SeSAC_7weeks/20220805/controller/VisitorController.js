@@ -16,3 +16,24 @@ exports.post_comment = (req,res) =>{
     });
     
 }
+
+exports.get_visitor = (req,res) =>{
+    Visitor.get_visitor( req.query.id, function(result) {
+        console.log( "result: ", result);
+        res.send( { result : result[0] } );
+    })
+}
+// patch도 post와 같이 body로 받아야 한다.
+exports.patch_comment = (req,res) =>{
+    Visitor.update( req.body, function(result){
+        console.log( result );
+        res.send( "수정성공" );
+    });
+}
+// delete도 post와 같이 body로 받아야 한다.
+exports.delete_comment = (req,res) =>{
+    Visitor.delete( req.body.id, function(result){
+        console.log( result );
+        res.send(" 삭제성공 ");
+    })
+}
