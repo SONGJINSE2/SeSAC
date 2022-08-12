@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>-->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        
+        <title>Index3.ejs</title>
+
+        <style>
+            #welcome1{
+                background-color: rgb(227, 226, 226);
+                text-align: center;
+                width: 100%;
+                height: 400px;
+                position: absolute;
+            }
+            #welcome2{
+                background-color: mintcream;
+                text-align: center;
+                width:500px;
+                height: 300px;
+                position: absolute;
+                left: 25%;
+                top: 50px;
+            }
+            #welcome3{
+                text-align: left;
+            }
+            #form_info1{
+                color : red;
+                width: 500px;
+                height: 100px;
+                text-align: center;
+                position: absolute;
+                left: 10px;
+               
+            }
+            #loginBtn{
+                background-color: skyblue;
+                border-radius: 10%;
+                position: absolute;
+                left: 220px;
+                top: 150px;
+            }
+            #userId{
+                width: 350px;
+                position: absolute;
+                left: 100px;
+                top: 20px;
+            }
+            #userPw{
+                width: 350px;
+                position: absolute;
+                left: 100px;
+                top: 60px;
+            }
+            #nameid{
+                position: absolute;
+                left:30px;
+                top: 20px;
+            }
+            #namepw{
+                position: absolute;
+                left:20px;
+                top: 60px;
+            }
+
+        </style>
+
+        
+            <script>
+            function sendGet(){
+                var form = document.getElementById("form_info");
+                
+                axios({
+                    method:"post",
+                    url:"http://localhost:8080/receive",
+                    data:{
+                        name: form.loginId.value,
+                        pw: form.loginPw.value
+                    }
+                }).then((a) => { return a.data; })
+                .then((d) => { 
+                    document.getElementById("form_info1").textContent = d
+                
+                });
+            }
+            </script>
+
+
+    </head>
+    <body>
+        <form id="form_info" action="receive" method="POST">
+
+            <div id="welcome1">
+                <div id="welcome2">
+                    <div id="welcome3">
+            
+                <p id='nameid'>아이디:</p><input type="text" id="userId" name="loginId" required><br><br>
+                
+                <p id='namepw'>비밀번호:</p><input type="password" id="userPw" name="loginPw" required>
+                </label><br><br>
+                
+                <p id="form_info1"></p>
+                <button id="loginBtn" type="button" onclick="sendGet()">로그인</button>
+                    </div>
+                </div>
+            </div>
+        
+            
+            
+        </form>
+    </body>
+</html>
