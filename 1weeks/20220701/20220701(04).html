@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>실습7</title>
+        <style>
+            *{
+                background-color:black;
+            }
+            .div1{
+                position:absolute;
+                transform: skewY(20deg) translate(100px);
+                top: 200px;
+                z-index: 3;
+            }
+            .div2{
+                position:absolute;
+                transform: skewY(20deg) translate(300px);
+                top: 100px;
+                z-index: 2;
+            }
+            .div3{
+                position: absolute;
+                transform: skewY(20deg) translate(500px);
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="div1"><img width="400" height="400" src="./img/5.png"></div>
+        <div class="div2"><img width="400" height="400" src="./img/6.png"></div>
+        <div class="div3"><img width="400" height="400" src="./img/7.png"></div>
+
+    </body>
+</html>

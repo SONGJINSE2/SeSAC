@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=\, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>-->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        
+        <title>Index3.ejs</title>
+
+        <style>
+            #welcome1{
+                background-color: rgb(227, 226, 226);
+                text-align: center;
+                width: 100%;
+                height: 800px;
+            }
+            #welcome2{
+                background-color: mintcream;
+                text-align: center;
+                width:500px;
+                position: relative;
+                left: 10px;
+                top: 50px;
+            }
+            #welcome3{
+                text-align: left;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form action="receive3" method="POST">
+
+            <div id="welcome1">
+                <div id="welcome2">
+                    <div id="welcome3">
+            
+                <legend>회원가입</legend>
+                <label>이름 :
+                    <input type="text" name="name" required style="width: 120px;">
+                </label><br><br>
+                <label>주민등록번호 :
+                    <input type="text" name="number" required style="width: 80px;"> - <input type="password" name="number" required style="width: 80px;">
+                </label><br><br>
+                <label>아이디 :
+                    <input type="text" name="id" required style="width: 150px;"> <input type="button" required value="중복확인"> 
+                </label><br><br>
+                <label>비밀번호 :
+                    <input type="password" name="pw1" required style="width: 150px;">
+                </label><br><br>
+                <label>비밀번호확인 :
+                    <input type="password" name="pw2" required style="width: 150px;">
+                </label><br><br>
+
+                <fieldset>
+                    <legend>선택사항</legend>
+            
+                    
+                관심사
+                <input type="checkbox" name="habbit" value="여행" >여행
+                <input type="checkbox" name="habbit" value="패션" >패션
+                <input type="checkbox" name="habbit" value="음식" >음식<br><br>
+                이메일 <input type="email" name="email" placeholder="이메일"><br>
+            </fieldset>
+                    </div>
+                </div>
+            </div>
+            
+            <input type="reset">
+        
+
+            <button>회원가입</button>
+        </form>
+    </body>
+</html>

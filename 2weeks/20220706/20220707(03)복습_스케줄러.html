@@ -1,0 +1,48 @@
+<html>
+
+    <head>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+        <script>
+
+            function getValue(){
+                $("#asd").val("haha");
+            }
+
+            function append(){
+                var as = document.createElement("li");
+                as.innerHTML=$("#asd").val( );
+                $("#1td").append(as);
+            }
+            
+            $("#asd").val("haha");
+
+            var as = document.createElement("li");
+            as.innerHTML=$("#asd").val();
+            $("#1td").append(as);
+            
+
+        </script>
+
+
+    
+    </head>
+        
+    <body>
+        <input type="text" id="asd">
+        <input type="button" onclick="getValue()" value="추가">
+        <input type="button" onclick="append()" value="삽입">
+
+        <table border="5" cellpading="10" cellspacing="10">222
+            <td id="1td">2</td>
+            <td>3</td>
+        </table>
+
+    </body>
+
+</html>

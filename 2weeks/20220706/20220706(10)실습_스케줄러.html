@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../SeSSAC_4기 1주차/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../SeSSAC_4기 1주차/jquery-ui-1.13.1.custom/jquery-ui.css">
+
+    <script>
+            function write1(){
+                var as = document.createElement("li");
+                as.innerHTML=$("#date2").val( );
+                $("#first").append(as);
+            }
+            //function write1(){
+            //    var as = document.createElement("li");
+            //    as.innerHTML=$("#date2").val( );
+            //    $("#2").append(as);
+            //}
+            
+    </script>
+    <style>
+        #container{
+            width:100%;
+            padding:20px;
+            box-sizing:border-box;
+        }
+
+        input{
+            margin-bottom:10px;
+        }
+
+        .left_box{
+            width:25%;
+            display:inline-block;
+        }
+
+        .right_box{
+            width:70%;
+            display:inline-block;
+        }
+
+        table th, table td{
+            text-align: center;
+        }
+
+        h1{
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="left_box">
+            <label for="date1">날짜:</label>
+            <input type="text" id="date1"><br>
+
+            <label for="date2">내용:</label>
+            <input type="text" id="date2"><br>
+
+            <button type="button" onclick="write1()">작성</button>
+        </div>
+
+        <div class="right_box">
+            <h1 style="text-align: center;">2022년 7월</h1>
+            <table cellpadding="20" cellspacing="2" width="100%">
+
+                <td style="color: red;">日</td>
+                <td>月</td>
+
+                <td>火</td>
+                <td>水</td>
+                <td>木</td>
+                <td>金</td>
+                <td>土</td>
+                <tr></tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="first">1</td>
+                <td id="second">2</td>
+                <tr></tr>
+                <td style="color: red;">3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <tr></tr>
+                <td style="color: red;">10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <tr></tr>
+                <td style="color: red;">17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <tr></tr>
+                <td style="color: red;">24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <tr></tr>
+                <td style="color: red;">31</td>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="../SeSSAC_4기 1주차/jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+        <link rel="stylesheet" href="../SeSSAC_4기 1주차/jquery-ui-1.13.1.custom/jquery-ui.css">
+        
+        <style>
+            div{
+                width: 500px;
+                height: 500px;
+            }
+            .apple {
+                background-image: url("./img/apple.png");
+            }
+            .banana {
+                background-image: url("./img/banana.png");
+            }
+        </style>
+
+        <script>   
+            function change( fruit ){
+                $("div").switchClass("apple", "banana", 10000);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="apple"></div>
+        <button type="button" onclick="change('apple')">사과</button>
+        <button type="button" onclick="change('banana')">바나나</button>
+        <button type="button" onclick="change('grape')">포도</button>
+        <button type="button" onclick="change('peach')">복숭아</button>
+
+    </body>
+</html>
