@@ -1,0 +1,215 @@
+      .nav-link{
+        color: white;
+        font-size: x-large;
+      }
+      .left-column{
+        width: 200px;
+        height: 1000px;
+        border: 100px;
+        border-color: black;
+        top: 100px;
+        position: absolute;
+      }
+      .nav-item{
+        color: black;
+      }
+      .top-column{
+        color: black;
+        height: 55px;
+        background-color: rgb(255, 255, 255);
+      }
+      /* table{
+        position: absolute;
+        left:220px;
+        top: 100px;
+        border-style: solid;
+        border: 1px;
+        border-color: black;
+        border-width: 1px;
+        cellspacing
+      }
+      thead{
+        background-color: rgba(218, 210, 210, 0.906);
+        border: 2px;
+        border-color: black;
+      }
+      td {    
+              width: 100px;
+              height: 100px;
+          }
+          tr > td:first-child > p,
+          tr > th:first-child > p {
+              color: red
+          }
+          td > p:hover {
+              transform: scale(1.2);
+              cursor:pointer;
+          } */
+      .insert_schedule{
+        position: absolute;
+        left: 300px;
+        bottom: 10px;
+      }
+      .month{
+        position: absolute;
+        left: 230px;
+        top: 60px;
+        font-family: 'Black Han Sans', sans-serif;
+      }
+      .nav-snb{
+        height: 845;
+        width: 220;
+        margin:0;
+        padding:0;
+      }
+      .write_schedule{
+        position: absolute;
+        top: 100px;
+        left: 35px;
+      }
+      .grid-container{
+        display:grid;
+        grid-template-columns: 200px auto;
+        grid-template-rows: 500px 500px;
+      }
+      
+      .grid-item:nth-child(1){
+        background-color: rgb(247, 244, 244);
+        grid-column-start:1;
+        grid-column-end:2;
+        border-radius: 5%;
+        border-color: grey;
+        border-style: solid;
+        border-width: 1px;
+        margin: 2px;
+        padding: 2px;
+      }      
+      .grid-item:nth-child(2){
+        background-color: white;
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border-radius: 1%;
+        border-color: grey;
+        border-style: solid;
+        border-width: 1px;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      .grid-item:nth-child(3){
+        background-color: rgb(247, 244, 244);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-radius: 5%;
+        border-color: grey;
+        border-style: solid;
+        border-width: 1px;
+        margin: 2px;
+        padding: 2px;
+      }   
+      .writeBtn{
+        background-color:ghostwhite;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.48);
+      }
+      .correctBtn{
+        background-color:ghostwhite;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.48);
+      }
+      .leftBtn{
+        position: relative;
+        left: 40px;
+      }
+      .topBtn1{
+        position: absolute;
+        right:200px;
+        top: 10px;
+        width:100px;
+        border-style: solid;
+        background-color: ghostwhite;
+        color: black;
+        scale: 0.8;
+        font-size:large;
+        
+      }
+      .topBtn2{
+        position: absolute;
+        right:110px;
+        top: 10px;
+        width:100px;
+        border-style: solid;
+        background-color: ghostwhite;
+        color: black;
+        scale: 0.8;
+        font-size:large;
+      }
+
+      .minimalistBlack {
+        position:relative;
+        top: 30px;
+        left: 30px;
+        border: 1px solid #625e5e59;
+        width: 97%;
+        text-align: left;
+        border-collapse: collapse;
+        /* min-width:1845px;
+        max-width:100px; */
+        overflow: auto;
+      }
+      .divTable.minimalistBlack .divTableCell, .divTable.minimalistBlack .divTableHead {
+        border: 1px solid #625e5e59;
+        padding: 5px 4px;
+      }
+      .divTable.minimalistBlack .divTableBody .divTableCell {
+        font-size: 13px;
+        height: 180px;
+      }
+      .divTable.minimalistBlack .divTableHeading {
+        background: #CFCFCF;
+        border-bottom: 1px solid #625e5e59;
+      }
+      .divTable.minimalistBlack .divTableHeading .divTableHead {
+        font-size: 15px;
+        font-weight: bold;
+        color: #000000;
+        text-align: left;
+      }
+      .divTableCell{
+        max-width:0;
+        max-height: 0;
+        overflow: auto;
+      }
+      .divTableRow{
+        max-width:0;
+        max-height:0;
+        overflow: auto;
+      }
+      .insert_sc{
+        max-height: 150;
+        max-width:250;
+        
+        
+      }
+
+      .divTable{ display: table; }
+      .divTableRow { display: table-row; }
+      .divTableHeading { display: table-header-group;}
+      .divTableCell, .divTableHead { display: table-cell;}
+      .divTableHeading { display: table-header-group;}
+      .divTableBody { display: table-row-group;}
+      
+      #bar-chart{
+        width: 100px;
+        height: 100px;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+      }
+      

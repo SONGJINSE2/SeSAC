@@ -1,0 +1,230 @@
+<html>
+  <head>
+    <title>메인화면</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="../static/basic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
+    
+  </head>
+  <body>
+      <div class="top-column">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><img src="../static/calendar.png" style="width:50px" ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../static/memo.png" style="width:50px" ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../static/cash.png" style="width:50px" ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../static/stats.png" style="width:50px" ></a>
+          </li>
+
+        </ul>
+          <button type="button" class="topBtn1" onclick="login();">로그인</button>
+          <button type="button" class="topBtn2" onclick="signup();">회원가입</button>
+      </div>
+    
+        <div class="grid-container">
+          <div class="grid-item">
+              날짜 : <input type="text" id="date" readonly> <br>
+              내용 : <input type="text" id="content"> <br><br>
+              <button class="leftBtn" type="button" onclick="writeSchedule();">작성</button>
+              <button class="leftBtn" type="button" onclick="correctSchedule();">수정</button>   
+          </div>
+            <div class="grid-item">
+              <div class="divTable minimalistBlack">
+                <div class="divTableHeading">
+                  <div class="divTableRow">
+                  <div class="divTableHead">일</div>
+                  <div class="divTableHead">월</div>
+                  <div class="divTableHead">화</div>
+                  <div class="divTableHead">수</div>
+                  <div class="divTableHead">목</div>
+                  <div class="divTableHead">금</div>
+                  <div class="divTableHead">토</div>
+                  </div>
+                </div>
+                  <div class="divTableBody">
+                    <div class="divTableRow">
+                      <div class="divTableCell"></div>
+                      <div class="divTableCell">1</div>
+                      <div class="divTableCell">2</div>
+                      <div class="divTableCell">3</div>
+                      <div class="divTableCell">4</div>
+                      <div class="divTableCell">5</div>
+                      <div class="divTableCell">6</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">7</div>
+                      <div class="divTableCell">8</div>
+                      <div class="divTableCell">9</div>
+                      <div class="divTableCell">10</div>
+                      <div class="divTableCell">11</div>
+                      <div class="divTableCell">12</div>
+                      <div class="divTableCell">13</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">14</div>
+                      <div class="divTableCell">15</div>
+                      <div class="divTableCell">16</div>
+                      <div class="divTableCell">17</div>
+                      <div class="divTableCell">18</div>
+                      <div class="divTableCell">19</div>
+                      <div class="divTableCell">20</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">21</div>
+                      <div class="divTableCell">22</div>
+                      <div class="divTableCell">23</div>
+                      <div class="divTableCell">24</div>
+                      <div class="divTableCell">25</div>
+                      <div class="divTableCell">26</div>
+                      <div class="divTableCell">27</div>
+                    </div>
+                    <div class="divTableRow">
+                      <div class="divTableCell">28</div>
+                      <div class="divTableCell">29</div>
+                      <div class="divTableCell">30</div>
+                      <div class="divTableCell">31</div>
+                      <div class="divTableCell"></div>
+                      <div class="divTableCell"></div>
+                      <div class="divTableCell"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item"></div>
+            </div>
+      
+          <canvas id="bar-chart"></canvas>
+
+  <div class="month" style="font-size:1.5em; color:black; text-align:left;">
+  2022. 08        
+  </div> 
+
+  <br>
+  
+<!-- <table border="5" cellspacing="2" cellpadding="5" align="center"  style="text-align:center; width:90%; height:800;">
+    <thead class="table" style="text-align: left">
+      <tr border="1" cellspacing="0" cellpadding="5">
+        <th>일</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+        <th>토</th>
+      </tr>
+    </thead>
+    <tbody style="text-align:left">
+      <tr>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p>1</p></td>
+        <td><p>2</p></td>
+      <tr>
+        <td><p>3</p></td>
+        <td><p>4</p></td>
+        <td><p>5</p></td>
+        <td><p>6</p></td>
+        <td><p>7</p></td>
+        <td><p>8</p></td>
+        <td><p>9</p></td>
+      </tr>
+      <tr>
+        <td><p>10</p></td>
+        <td><p>11</p></td>
+        <td><p>12</p></td>
+        <td><p>13</p></td>
+        <td><p>14</p></td>
+        <td><p>15</p></td>
+        <td><p>16</p></td>
+      </tr>
+      <tr>
+        <td><p>17</p></td>
+        <td><p>18</p></td>
+        <td><p>19</p></td>
+        <td><p>20</p></td>
+        <td><p>21</p></td>
+        <td><p>22</p></td>
+        <td><p>23</p></td>
+      </tr>
+      <tr>
+        <td><p>24</p></td>
+        <td><p>25</p></td>
+        <td><p>26</p></td>
+        <td><p>27</p></td>
+        <td><p>28</p></td>
+        <td><p>29</p></td>
+        <td><p>30</p></td>
+      </tr>
+      <tr>
+        <td><p>31</p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+        <td><p></p></td>
+      </tr>
+    </tbody>
+  </table> -->
+
+    
+    <!-- <div class="insert_schedule">
+      날짜 : <input type="text" id="date" readonly> <br>
+      내용 : <input type="text" id="content"> <br>
+      <button type="button" onclick="writeSchedule();">작성</button> <br>
+    </div>  -->
+  <script>
+   
+    $(".divTableCell").on("click", function( obj ){
+        target = obj.currentTarget; 
+        console.log( target );
+        $("#date").val( $(target).text());
+    });
+
+    function writeSchedule(){
+        var content = $("#content").val();
+        $(target).append("<p class='insert_sc'>"+ content + "</p>");
+    }
+    
+    new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["기쁨", "슬픔", "화남", "피곤", "짜증"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2478,5267,734,784,433]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: '이달의 나의 기분은?'
+      }
+    }
+});
+
+    </script>
+  </body>
+</html>
