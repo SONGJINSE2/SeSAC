@@ -15,8 +15,6 @@ app.get("/",function(req,res){
 
 app.post("/receive",function(req,res){
     
-    
-
     let loginId = req.body.name;
     let loginPw = req.body.pw;
     //let loginTxt;

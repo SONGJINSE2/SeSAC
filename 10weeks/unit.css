@@ -1,0 +1,93 @@
+.box {
+  margin-bottom: 100px;
+}
+
+.px {
+  width: 768px;
+  height: 500px;
+  background-color: brown;
+}
+
+.pct-parent {
+  width: 500px;
+  height: 500px;
+  background-color: plum;
+}
+
+.pct-child {
+  width: 50%;
+  height: 50%;
+  background-color: green;
+}
+
+.em {
+  font-size: 2em;
+}
+
+.case1 {
+  font-size: 20px;
+}
+
+.case2 {
+  font-size: 10px;
+}
+
+.em-3 {
+  font-size: 3em;
+}
+
+.rem {
+  font-size: 2rem;
+}
+
+.vw {
+  height: 20vw;
+  width: 20vw;
+  background-color: blue;
+}
+
+.vh {
+  height: 20vh;
+  width: 20vh;
+  background-color: pink;
+}
+
+.test {
+  font-size: 30px;
+}
+
+.jin_1 {
+  width: 1000px;
+  height: 1000px;
+  background-color: red;
+}
+
+.jin_2 {
+  width: 1000px;
+  height: 1000px;
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 1000px) {
+  .jin_1 {
+    width: 800px;
+    height: 800px;
+  }
+
+  .jin_2 {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .jin_1 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .jin_2 {
+    width: 500px;
+    height: 500px;
+  }
+}
