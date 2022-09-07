@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+        <button type="button" onclick="btnHello()">hello</button>
+        <button type="button" onclick="btnStudy()">study</button>
+        <button type="button" onclick="btnBye()">bye</button><br><br>
+        
+        <h5 id="select_1"></h5>
+        <script>
+            var socket = io.connect(); /* socket.io 연결 */
+
+            socket.on("connect", function(){ /*on <- 서버에서 connect라는 이름으로 무언가 통신을 보낸다*/
+                console.log( "Sever Socket Connected");
+            });
+
+            function btnHello(){
+                socket.emit("Hello", "hello");
+            }
+
+            function btnStudy(){
+                socket.emit("Study", "study");
+            }
+            
+            function btnBye(){
+                socket.emit("Bye", "bye");
+
+            }
+            
+            socket.on("clickResponse", function(data){
+                var tag = document.getElementById("select_1");
+                tag.textContent = data;
+            })
+
+            
+            
+
+        </script>
+    </body>
