@@ -1,6 +1,6 @@
-var express = require("express");
+var exrpess = require("express");
 const { send } = require("process");
-var app = express();
+var app = exrpess();
 var http = require("http").Server(app);
 var io = require("socket.io")(http);
 
@@ -8,7 +8,6 @@ app.get("/", function(req,res){
     console.log("client");
     res.sendFile( __dirname + "/index.html");
 });
-app.use( express.static( "public" ));
 // io -> 클라이언트의 모든 연결을 갖고 있는 친구
 // socket -> 클라이언트 한 명. socket.id 클라이언트를 구분하는 식별자
 var list = {};
