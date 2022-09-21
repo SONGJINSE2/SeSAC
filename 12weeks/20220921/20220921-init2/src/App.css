@@ -1,0 +1,42 @@
+/* .my_style{
+  background-color: blue;
+  color: orange;
+  font-size: 40px;
+  padding: 12px;
+}
+
+.style{
+  color:orange;
+  font-size:40px;
+  margin-top: 20;
+}
+
+span{
+  color:red;
+} */
+.main1{
+  width: 40%;
+}
+.main2{
+  background-color: bisque;
+  margin:0 auto;
+  text-align: center;
+}
+
+.title{
+  color:chocolate;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.title1{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title2{
+  text-align: left;
+  font-size:20px;
+  font-weight: bold;
+}
