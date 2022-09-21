@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Test5 from "./Test5";
 
-function App() {
+const App = () => {
+  const my_func = () => {
+    console.log("콘솔 띄우기 성공!");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Test5
+        text="App 컴포넌트에서 넘겨준 text props 입니다."
+        valid={my_func}
+      ></Test5>
     </div>
   );
-}
+};
 
 export default App;
