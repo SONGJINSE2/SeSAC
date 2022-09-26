@@ -1,0 +1,29 @@
+table{
+    width: 50%;
+    border: 1px solid #444444;
+}
+
+th{
+    border: 1px solid #444444;
+    margin: 0 auto;
+}
+
+td{
+    border:1px solid #000;
+}
+
+ul{
+    border: 1px solid #444444;
+    margin:0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.first_box{
+    margin-bottom:4%;
+}
+
+.input1{
+    margin: 5px;
+}
