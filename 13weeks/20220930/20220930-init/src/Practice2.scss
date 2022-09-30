@@ -1,0 +1,24 @@
+@import './circus.scss';
+
+.Practice2{
+
+        .box{
+        
+        &.pink{
+            background-color: pink;
+            @include boxSize(ball1 , 100px);
+        }
+
+        &.yellow{
+            background-color: yellow;
+            @include boxSize(ball2 , 200px);
+        }
+
+        &.green{
+            background-color: green;
+            @include boxSize(ball3, 300px);
+        }
+
+        
+    }
+}
