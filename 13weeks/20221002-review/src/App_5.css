@@ -1,0 +1,18 @@
+.test1 {
+  background-color: yellowgreen;
+  color: yellow;
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 50%;
+}
+
+.test2 {
+  width: 50%;
+  margin: 20px 20px 20px 25%;
+}
+
+.test3 {
+  width: 80%;
+}

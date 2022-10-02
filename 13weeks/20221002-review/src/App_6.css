@@ -1,0 +1,44 @@
+.box {
+  display: flex;
+}
+.red {
+  background-color: red;
+  width: 12.5%;
+  height: 100px;
+}
+
+.orange {
+  background-color: orange;
+  width: 12.5%;
+  height: 150px;
+}
+
+.yellow {
+  background-color: yellow;
+  width: 12.5%;
+  height: 200px;
+}
+
+.green {
+  background-color: green;
+  width: 12.5%;
+  height: 250px;
+}
+
+.blue {
+  background-color: blue;
+  width: 12.5%;
+  height: 300px;
+}
+
+.indigo {
+  background-color: indigo;
+  width: 12.5%;
+  height: 350px;
+}
+
+.purple {
+  background-color: purple;
+  width: 12.5%;
+  height: 400px;
+}

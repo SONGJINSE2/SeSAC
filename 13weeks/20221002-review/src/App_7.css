@@ -1,0 +1,91 @@
+.box1 {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 100px;
+}
+
+.worm1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: blue;
+  position: relative;
+  left: 50px;
+  top: 100px;
+  z-index: 1;
+}
+
+.worm2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: skyblue;
+  position: relative;
+  left: 110px;
+  top: 50px;
+  z-index: 1;
+}
+
+.worm3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: darkblue;
+  position: relative;
+  left: 150px;
+  top: 10px;
+  z-index: 1;
+}
+
+.worm4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: cadetblue;
+  position: relative;
+  left: 200px;
+  bottom: 80px;
+  z-index: 1;
+}
+
+.worm5 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: deepskyblue;
+  position: relative;
+  left: 250px;
+  bottom: 170px;
+  z-index: 1;
+}
+
+.box2 {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  bottom: 300px;
+  z-index: 2;
+}
+
+.worm-eye1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  z-index: 2;
+  background-color: white;
+  border: 1px solid black;
+  position: relative;
+  left: 60px;
+  bottom: 390px;
+}
+
+.worm-eye2 {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  z-index: 3;
+  background-color: black;
+  position: relative;
+  left: 60px;
+  bottom: 430px;
+}
