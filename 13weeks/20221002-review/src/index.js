@@ -6,10 +6,12 @@ import App_3 from "./App_3";
 import App_4 from "./App_4";
 import App_5 from "./App_5";
 import App_6 from "./App_6";
-import App_7 from "./App_7";
+// import App_7 from "./App_7";
 // import "./App_5.css";
 // import "./App_6.css";
-import "./App_7.css";
+// import "./App_7.css";
+// import App_8 from "./App_8";
+import App_9 from "./App_9";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +22,8 @@ root.render(
     {/* <App_4 txt="a가 b보다 큽니다" /> */}
     {/* <App_5 title="Hello World" /> */}
     {/* <App_6 /> */}
-    <App_7 />
+    {/* <App_7 /> */}
+    {/* <App_8 /> */}
+    <App_9 />
   </React.StrictMode>
 );
