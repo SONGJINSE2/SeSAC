@@ -1,0 +1,54 @@
+#box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+#redBox {
+  margin: 10px;
+}
+
+#redBtn {
+  margin: 10px;
+}
+
+#box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+#greenBox {
+  margin: 10px;
+}
+
+#greenBtn {
+  margin: 10px;
+}
+
+#box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+#yellowBox {
+  margin: 10px;
+}
+
+#yellowBtn {
+  margin: 10px;
+}

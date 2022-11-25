@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./practice.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.js"></script>
+    <title>Document</title>
+  </head>
+  <script>
+    function reducer(state, action) {
+      // state: 현재 상태 -. 변경되기 전,
+      // action: dispatch 를 호출할 때 넣었던 객체
+      //   return { color: "red" };
+      if (action.type === "CHANGE") {
+        return { color: action.color };
+      }
+    }
+
+    function changeColorBtn() {
+      store.dispatch({ type: "CHANGE", color: "red" });
+    }
+
+    let store = Redux.createStore(reducer);
+
+    // const clickRed = () => {
+    //   let state = store.getState(); // {color:~~}
+    //   document.querySelector("#box1").style.backgroundColor = state.color;
+    // };
+    // const clickGreen = () => {
+    //   let state = store.getState(); // {color:~~}
+    //   document.querySelector("#box2").style.backgroundColor = state.color;
+    // };
+    // const clickYellow = () => {
+    //   let state = store.getState(); // {color:~~}
+    //   document.querySelector("#box3").style.backgroundColor = state.color;
+    // };
+
+    // store.subscribe(clickRed);
+    // store.subscribe(clickGreen);
+    // store.subscribe(clickYellow);
+
+    const changeAll = () => {
+      let state = store.getState();
+      document.querySelector("#box1").style.backgroundColor = state.color;
+      document.querySelector("#box2").style.backgroundColor = state.color;
+      document.querySelector("#box3").style.backgroundColor = state.color;
+    };
+
+    store.subscribe(changeAll);
+  </script>
+
+  <body>
+    <div id="box1">
+      <a id="redBox">red</a>
+      <button id="greenBtn" onclick="changeColorBtn()">실행</button>
+    </div>
+    <div id="box2">
+      <a id="greenBox">green</a>
+      <button
+        id="greenBtn"
+        onclick="store.dispatch({type: 'CHANGE', color: 'green'})"
+      >
+        실행
+      </button>
+    </div>
+    <div id="box3">
+      <a id="yellowBox">yellow</a>
+      <button
+        id="yellowBtn"
+        onclick="store.dispatch({type: 'CHANGE', color: 'yellow'})"
+      >
+        실행
+      </button>
+    </div>
+  </body>
+</html>
